@@ -1,0 +1,4 @@
+# Insert the plugin layer into the profile's plugin tree.
+- insert:
+    - id: diff-review
+      name: dsh-diff-review
