@@ -31,7 +31,11 @@ The review page: tabs on top, the whole diff below, colored by Dart grammar.
 ## Install
 
 ```sh
-dsh plugin --profile web add dsh-diff-review
+# from the prebuilt release tarball (no build step)
+dsh plugin --profile web add https://github.com/ChiffonOwO/dsh-diff-review/releases/latest/download/dsh-diff-review.tgz
+
+# or straight from source
+dsh plugin --profile web add github:ChiffonOwO/dsh-diff-review
 ```
 
 Restart the app afterwards (the plugin list is read at startup). In the desktop app, use your own profile name instead of `web`.

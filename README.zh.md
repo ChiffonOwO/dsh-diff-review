@@ -32,7 +32,11 @@ DeepSeek Harness 的 Codex 风格「改动审查」：助手一旦改文件，�
 ## 安装
 
 ```sh
-dsh plugin --profile web add dsh-diff-review
+# 用预构建的 Release 包（跳过源码构建）
+dsh plugin --profile web add https://github.com/ChiffonOwO/dsh-diff-review/releases/latest/download/dsh-diff-review.tgz
+
+# 或者直接从源码装
+dsh plugin --profile web add github:ChiffonOwO/dsh-diff-review
 ```
 
 装完**重启应用**（插件列表只在启动时读一次）。桌面端把 `web` 换成你自己的 profile 名。
